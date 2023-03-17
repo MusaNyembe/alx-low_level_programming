@@ -1,5 +1,7 @@
 #include <stdio.h>
-/* My first code
+/**
+ * main - main block
+ * Return: 0
  */
 int main(void)
 {
