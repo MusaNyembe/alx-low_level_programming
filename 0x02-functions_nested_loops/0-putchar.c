@@ -1,19 +1,18 @@
-#include "holberton.h"
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char *sh = "Holberton";
+#include <stdio.h>
+#include <ctype.h>
+int main(void){
+char var;
+printf( "Enter any char from keyboard ");
+putchar ('\n'); // Move the crusher to next line
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
+var = getchar();
+  if(islower(var))
+  {
+  putchar(toupper(var));
 	}
-	_putchar('\n');
-
-	return (0);
+ else
+ {
+ putchar(tolower(var));
+  }
+return 0;
 }
