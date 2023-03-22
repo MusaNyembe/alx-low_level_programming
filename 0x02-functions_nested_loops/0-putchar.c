@@ -1,18 +1,19 @@
-#include <stdio.h>
-#include <ctype.h>
-int main(void){
-char var;
-printf( "Enter any char from keyboard ");
-putchar ('\n'); // Move the crusher to next line
+#include "holberton.h"
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char *sh = "Holberton";
 
-var = getchar();
-  if(islower(var))
-  {
-  putchar(toupper(var));
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
 	}
- else
- {
- putchar(tolower(var));
-  }
-return 0;
+	_putchar('\n');
+
+	return (0);
 }
